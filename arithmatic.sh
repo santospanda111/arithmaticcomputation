@@ -21,18 +21,3 @@ do
         arr[i]=${arithmaticoperation[operation$((i+1))]}
 done
 echo ${arr[@]}
-
-for (( i=0; i<=2; i++ ))
-do
-        for (( j=i+1; j<=3; j++ ))
-        do
-                if [ ${arr[j]} -ge ${arr[i]} ]
-                then
-                        tmp=${arr[i]}
-                        arr[i]=${arr[j]}
-                        arr[j]=$tmp
-                fi
-        done
-done
-
-echo ${arr[@]}
