@@ -7,3 +7,9 @@ operation1=$(( a + b * c ))
 operation2=$(( a * b + c ))
 operation3=$(( c + a / b ))
 operation4=$(( a % b + c ))
+
+declare -A arithmaticoperation
+arithmaticoperation[operation1]=$operation1
+arithmaticoperation[operation2]=$operation2
+arithmaticoperation[operation3]=$operation3
+arithmaticoperation[operation4]=$operation4
