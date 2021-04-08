@@ -13,3 +13,11 @@ arithmaticoperation[operation1]=$operation1
 arithmaticoperation[operation2]=$operation2
 arithmaticoperation[operation3]=$operation3
 arithmaticoperation[operation4]=$operation4
+
+declare -a arr
+for((i=0; i<=${#arithmaticoperation[@]}; i++))
+do
+
+        arr[i]=${arithmaticoperation[operation$((i+1))]}
+done
+echo ${arr[@]}
